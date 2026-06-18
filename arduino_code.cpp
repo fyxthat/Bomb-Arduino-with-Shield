@@ -84,7 +84,7 @@ void loop(){
         contador--; // Decrements the counter by one, simulating a seconds countdown
     }
     if (contador < 10){ // If the remaining time is less than 10
-      MFS.beep(20); // Beeps for 200ms
+      MFS.beep(50, 50, 10); // Beeps for 10 seconds
       MFS.blinkDisplay(DIGIT_ALL, ON);  // Activates a function that blinks the display until disabled
     }
     if (buttonAction == BUTTON_PRESSED_INT){  // Checks for a short click to avoid counting two clicks in a single press
@@ -106,6 +106,6 @@ void loop(){
   else{ // If the remaining time reaches 0
     MFS.blinkDisplay(DIGIT_ALL, OFF); // Stops blinking the display (it starts blinking when time is below 10)
     MFS.write("ICE"); // Writes ICE on the display
-    MFS.beep(30000);  // Continuous beep for 5 minutes (basically indefinite — nobody deserves 5 minutes of that)
+    MFS.beep(300);  // Continuous beep for 3 seconds
   }
 }
