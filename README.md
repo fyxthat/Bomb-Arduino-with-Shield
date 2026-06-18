@@ -54,3 +54,7 @@ The 4 on-board LEDs display the number of correct button presses in binary (0–
 | 2 | ○ | ○ | ● | ○ |
 | … | … | … | … | … |
 | 8 | ● | ○ | ○ | ○ |
+
+---
+
+Project made as a school work in Interdiciplinar Work I: Programming
